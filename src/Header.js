@@ -1,21 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 function Header() {
   return (
     <div>
       <ul>
-        <a href="#">
-          <li>Menu</li>
-        </a>
-        <a href="#">
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <Link to="/about">
           <li>About</li>
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="/services">
           <li>Services</li>
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="/feedback">
           <li>Feedback</li>
-        </a>
+        </Link>
       </ul>
     </div>
   );
