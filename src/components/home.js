@@ -1,10 +1,12 @@
 import React from "react";
-import "./components.css";
-
 function Home() {
+  const items = [];
+  for (let i = 0; i < 10; i++) {
+    items.push(<li>Hello {i}</li>);
+  }
   return (
     <div>
-      <h1 className="home">Home Page</h1>
+      <ul>{items}</ul>
     </div>
   );
 }
